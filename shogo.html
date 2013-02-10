@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<body>
+	<script src="./jquery-ui-1.10.0.custom/jquery-ui-1.10.0.custom/js/jquery-1.9.0.js"></script>
+	<script src="./jquery-ui-1.10.0.custom/jquery-ui-1.10.0.custom/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <style type="text/css">
+    <!--
+    img.non-active {display:none;}
+    img.active {display:block;}
+    -->
+    </style>
+<div id="sign-wrap">
+  <div id="img-wrap">
+    <img id="sign1" alt="sign" src="./shogo/1.jpg" style="display:none;"/>
+    <img id="sign2" alt="sign" src="./shogo/2.jpg" style="display:none;"/>
+    <img id="sign3" alt="sign" src="./shogo/3.jpg" style="display:none;"/>
+    <img id="sign4" alt="sign" src="./shogo/4.jpg" style="display:none;"/>
+    <img id="sign5" alt="sign" src="./shogo/5.jpg" style="display:none;"/>
+    <img id="sign6" alt="sign" src="./shogo/6.jpg" style="display:none;"/>
+    <img id="sign7" alt="sign" src="./shogo/7.jpg" style="display:none;"/>
+    <img id="sign8" alt="sign" src="./shogo/8.jpg" style="display:none;"/>
+    <img id="sign9" alt="sign" src="./shogo/9.jpg" style="display:none;"/>
+    <img id="sign10" alt="sign" src="./shogo/10.jpg" style="display:none;"/>
+    <img id="sign11" alt="sign" src="./shogo/11.jpg" style="display:none;"/>
+    <img id="sign12" alt="sign" src="./shogo/12.jpg" style="display:none;"/>
+    <img id="sign13" alt="sign" src="./shogo/13.jpg" style="display:none;"/>
+    <img id="sign14" alt="sign" src="./shogo/14.jpg" style="display:none;"/>
+  </div>
+</div>
+<script>
+<!--
+function changeImage(images, i){
+  $(images[i]).css({
+          position: "absolute",
+          opacity: 0.0,
+          display: "block"
+        })
+        .animate({
+          opacity: 1.0
+        },
+        {
+          duration: 2000,
+          easing: "easeOutQuart",
+          complete: function(){
+            $(images[i-1]).css({display: "none"});
+            i+=1;
+            changeImage(images, i);
+            console.log(i)
+            if (i == images.length){
+              $(images).css({display: "none"});
+              changeImage(images,[images.length-1]);
+            }
+          }
+        }
+  )
+}
+
+$(function(){
+  var images = $("#img-wrap img");
+  var i = 0;
+  (function(){
+    changeImage(images, i);
+  })();
+    console.log(i)
+    if (i == images.length-1){
+      images.css({display: none});
+    }
+
+});
+-->
+</script>
+
+</body></html>
